@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Input NBA Lottery Team to display Odds of getting #1 Pick.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+var teams = ["Knicks", "Cavaliers", "Suns", "Bulls", "Hawks", "Wizards", "Pelicans", "Grizzlies", "Mavericks", "Timberwolves", "Lakers", "Hornets", "Heat", "Kings"];
+var percent = [14, 14, 14, 12.5, 10.5, 9, 6, 6, 6, 3, 2, 1, 1, 1];
+function myFunction() {
+  var i;
+  var teamName = prompt("Enter your Favorite NBA Team", "Cavaliers");
+  for(i=0; i< teams.length; i++){
+    if (teams[i] == teamName) {
+      document.getElementById("demo").innerHTML ="Your Favorite Team is the " + teamName + " " + percent[i] +"% Chance";
+    }
+  }
+}
+
+
+
+</script>
+
+Click Here for something strange :\<br>
+<button onclick="myFunction1()">Try it</button>
+
+<p id="demo#1"></p>
+
+<script>
+function myFunction1() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo#1").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+</script>
+</body>
+</html>
